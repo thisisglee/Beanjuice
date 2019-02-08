@@ -1,0 +1,43 @@
+@import "default.scss";
+
+.boxes{
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  margin: 50px 75px;
+  color: $white;
+
+
+.box {
+  background: $white;
+  color: $black;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow:  $grey;
+  border-style: solid;
+  border-color: $black;
+  width: auto;
+  height: 300px;
+
+  .fas,.fa-exclamation-circle {
+    color: $blue;
+}
+
+  a{
+    color: $black;
+    text-decoration: none;
+
+  }
+}
+
+.box:hover {
+  background-color: $grey;
+  text-decoration: none;
+  transition: .4s ease-out .0s;
+  }
+
+}
+
+//RESPONSIVE LAYOUT
+@media screen and (max-width: 500px) {
+  .boxes{margin: 40px 60px;}}

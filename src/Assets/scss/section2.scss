@@ -1,0 +1,35 @@
+@import "default.scss";
+
+.section2{
+  background-color: white;
+  color: $black;
+  text-align: center;
+  height: 45vw;
+
+  h3{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 9vw;
+  }
+
+  .google_map{
+    width: 100%;
+    height: 35.5vw;
+    position: relative;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .section2{
+    height: 80vw;
+
+    h3{
+      height: 18vw;
+    }
+    .google_map{
+      height: 62vw;
+    }
+  }
+}

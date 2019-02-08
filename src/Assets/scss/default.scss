@@ -1,0 +1,27 @@
+@import "_config.scss";
+
+  //VARIABLES
+  $grey : #f2f2f2;
+  $black : #2d2a26;
+  $blue : #1dcad3;
+  $dark_blue : #007481;
+  $white: #FFFAFA;
+  $font-stack : "Open Sans";
+
+
+body{
+    //FONTS
+    font-family:$font-stack ;
+    font-weight: bold;
+    font-size: 10px;
+    color: $black;
+
+      .h1{ font-size: 35rem;}
+      .h2{ font-size: 30rem;}
+      .h3{ font-size: 26rem;}
+      .h4{ font-size: 23rem;}
+      .p{  font-size: 20rem;
+          font-weight: normal;
+          font-family: "Open Sans Regular";
+        }
+}

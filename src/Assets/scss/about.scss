@@ -1,0 +1,33 @@
+@import "default.scss";
+
+.about{
+  background-color: $blue; /* fallback */
+  background-image: linear-gradient(to left, $dark_blue, transparent);
+
+  color: $white;
+  height: auto;
+
+  box-shadow:  $grey;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2,1fr);
+  padding: 3rem;
+
+  text-align: center;
+
+  h1{
+    display: inline-block;
+    padding-top: 25%;
+  }
+
+  a{
+    color: $white;
+    text-decoration: none;
+    }
+  }
+
+  //RESPONSIVE LAYOUT
+  @media screen and (max-width: 700px) {
+    .about{
+      grid-template-columns: repeat(1,1fr);
+      h1{padding-top: 20px;}}}

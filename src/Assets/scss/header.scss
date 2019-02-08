@@ -1,0 +1,90 @@
+@import "default.scss";
+
+header {
+  background: $white;
+  background-color: $white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+
+
+  width: 100%;
+  font-size: 20px;
+  height: auto;
+
+  //sticky navigation
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  display: grid;
+  grid-template-areas: 'img call'
+                        'img header-right';
+
+  img {
+      grid-area: img;
+      background: $white;
+      height: inherit;
+      width: 200px;
+      margin-top:auto; margin-bottom: 2;
+      margin-left:auto; margin-right:2;
+      }
+
+  .call{
+      grid-area: call;
+      margin-left:auto;
+      margin-right:0;
+      a{color: $black;text-decoration: none;}
+    }
+
+  .header-right {
+      grid-area: header-right;
+      margin-left:auto; margin-right:2;
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      padding-right: 5px;
+      a { display: inline-block;
+          color: $black;
+          text-decoration: none;
+          padding-left:  2px;}
+
+      a:hover {color: $dark_blue;
+          text-decoration: none;
+          transition: .4s ease-out .0s;
+          }
+
+      .popup{color: $white;
+          background-color: $blue;
+          width: 100%;}
+  }
+
+}
+//RESPONSIVE LAYOUT
+@media screen and (max-width: 700px) {
+  header{
+    padding: 0;
+    display: grid;
+    grid-template-areas: 'img call'
+                        'header-right header-right';
+    img{margin: 0; margin-left: 50px;}
+    .call{font-size: 1rem;}
+    .header-right{margin: auto;}
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+  header{
+    padding: 0;
+    display: grid;
+    grid-template-areas: 'img'
+                          'header-right';
+    img{margin: 0; margin-left: auto; margin-right: auto;}
+    .call{display: none;}
+    .header-right{ grid-template-columns: 1fr;
+                  width: 100%;text-align: center;
+                   a{background-color: $grey; padding:0;}
+                   a:hover {background-color: $dark_blue; color: $white;}
+                  .popup{background-color: $blue;}
+                }
+    }
+}

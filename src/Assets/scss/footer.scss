@@ -1,0 +1,45 @@
+@import "default.scss";
+
+footer{
+  background-color: $black;
+  color: $white;
+  height: auto;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+
+  display: grid;
+  grid-template-areas: 'icons address';
+
+  text-align: center;
+
+  .icons{
+    grid-area: icons;
+    display: inline-block;
+    padding-top: 60px;
+
+    i{
+      margin-left:10px;
+    }
+  }
+
+  .address{
+    grid-area: address;
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 80px;
+    a{color: $white;text-decoration: none;}
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer{
+    .icons{
+      padding-left: 10px;
+    }
+  .address{
+    grid-area: address;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 30px;
+  }
+}
+}
