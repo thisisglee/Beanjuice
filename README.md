@@ -2,18 +2,35 @@
 # Beanjuice
 Coffee Website for Netgain SEO. 
 
-Responsive- YES
-Sticky Navigation- YES
-Click to CALL - YES
-POPUP FORM from design files- YES
-
-Wordpress Theme- YES
-SASS/ SCSS - SCSS YES
-GULP - YES
-CSS ANIMATIONS- YES
-GIT Repository- YES
+Technologies used-
 
 REACT, GULP, SCSS, HTML, CSS, ADOBE ILLUSTRATOR, NODE.JS COMMAND PROMPT, ATOM, INKSCAPE
+
+## Usage
+
+### Install dependencies
+
+```
+npm install
+```
+
+### Run React dev server (http://localhost:3000)
+
+```
+npm start
+```
+
+### Run the JSON server (http://localhost:5000)
+
+```
+npm run server
+```
+
+### To build for production
+
+```
+npm run build
+```
 
 
 GURLEEN MAGGON || 705-794-3848 || GENERAL LICENSING
